@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="html" colormodel=>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+        
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/001padrao.png" type="image/x-icon">
+    <script src="js/code.js" defer></script>
+    <script src="js/colors.js" defer></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Dicenders - Rede de comunidades e mesa virtual de RPG</title>
+</head>
+<body class="bg-5 oswald-font" theme-dicender=default>
+  <button type="button" class="btn btn-primary" id="buttonModal" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="display: none;">
+    Launch static backdrop modal
+  </button>
+  
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content position-absolute bg-glass text-2">
+        <div class="modal-header border-2 bc-2">
+          <button type="button" class="btn-close bi-x-lg text-center align-middle" data-bs-dismiss="modal" aria-label="Close" style="color: var(--bs-color-2);"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="text-2 text-post text-center">Talvez o nosso site não esteja muito visível!</h1>
+          <p class="text-2"> É importante para nós que todos sejam capaz de ler este texto, bem como utilizar o site sem grandes problemas. Se você é capaz de ler este alerta, apenas pressione o botão "navegar".</p>
+          <p class="text-2">Este alerta não será exibido novamente. Para alterar a configuração de alto-contraste ou qualquer outra configuração de acessibilidade, entre em <b>Configurações > Personalização > Acessibilidade</b>.</p>
+          <button type="submit" class="btn btn-danger text-warning align-center w-50" onclick="ativacontraste()" style="background-color: #ff0000; color: #ffe600;"><b>Ativar alto-contraste</b></button>
+        </div>
+        <div class="modal-footer border-2 bc-2">
+          <button type="button" class="btn btn-glass float-end" onclick="desativamodal()" data-bs-dismiss="modal">Navegar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <nav class="navbar fw-300 navbar-expand-lg bg-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/001.svg" class="logo" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><p class="text-clean fs-5 m-2 fw-500">Social</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><p class="text-clean fs-5 m-2 fw-500">Notificações</p></a>
+          </li>
+
+          <li class="nav-item dropdown m-2">
+            <a href="cadastro.php">
+            <div class="bg-5 profile row mx-0 rounded-5 container">
+                <button type="submit" class="btn text-2">Cadastre-se</button>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+      <section class="bg-image">
+        <div class="bg-glass" style="border-radius: 0;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 my-5">
+                      <h1 class="text-center text-2 fw-400 h1-index my-5">Dicenders</h1>
+                      <br>
+                      <div class="mx-6 p-5 mt-3 ms-0">
+                          <p class="fw-500 text-dm" style="text-align: justify; line-height: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae impedit dicta deleniti quia quaerat. Libero provident dignissimos eaque recusandae hic possimus excepturi commodi eveniet magnam sit asperiores nobis eligendi quae doloremque aperiam voluptas a numquam, totam eum iusto? Consectetur, ut.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 my-5">
+                      <img src="img/logofundo.png" class="align-image mb-6" style="opacity: 70%; filter: blur(2px); backdrop-filter: blur(1.5px); width: 50%;" alt="...">
+                      <div class="ms-0">
+                        <a href="cadastro.php">
+                          <button type="submit" class="btn btn-primary btn-white w-50 align-center">Cadastre-se</button>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="m-5">
+            <h1 class="text-center text-transition text-clean my-5 fw-600">Algumas funções que nos tornam a melhor mesa para você:</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-5">
+                    <img src="img/i_img_1.svg" width="100%" class="align-image" alt="...">
+                </div>
+                <div class="col-md-6 fw-400 my-5">
+                    <div class="mx-5 align-center position-relative" style="top:25%;">
+                        <p class="text-transition text-clean" style="text-align: center;">Faça parte das suas comunidades <b class="text-2">favoritas</b> dentro de uma rede social <b class="text-2">exclusiva</b>.</p>
+                    </div>
+                    <div class="align-center position-relative" style="top:25%;">
+                      <a href="cadastro.php">
+                        <button type="submit" class="btn btn-primary btn-glass align-center w-50" style="width: 75%;">Cadastre-se</button>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="container-fluid bg-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 fw-400 my-5">
+                <div class="mx-5 align-center position-relative" style="top:25%;">
+                    <p class="text-transition text-clean" style="text-align: center;">Coordene <b class="text-2">suas mesas</b> e fique por dentro das postagens <b class="text-2">mais relevantes</b> para você.</p>
+                </div>
+                <div class="align-center position-relative" style="top:25%;">
+                  <a href="cadastro.php">
+                    <button type="submit" class="btn btn-primary btn-white align-center w-50" style="width: 75%;">Cadastre-se</button>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-6 my-5">
+                <img src="img/i_img_2.svg" width="100%" class="align-image" alt="...">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 my-5">
+                  <img src="img/i_img_3.svg" width="100%" class="align-image" alt="...">
+              </div>
+              <div class="col-md-6 fw-400 my-5">
+                  <div class="mx-5 align-center position-relative" style="top:25%;">
+                      <p class="text-transition text-clean" style="text-align: center;"><b class="text-2"> Compartilhe dicas</b> com seus amigos e conheça <b class="text-2">novos jogadores</b> para sua campanha.</p>
+                  </div>
+                  <div class="align-center position-relative" style="top:25%;">
+                    <a href="cadastro.php">
+                      <button type="submit" class="btn btn-primary btn-glass align-center w-50" style="width: 75%;">Cadastre-se</button>
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+      <section class="container-fluid bg-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 fw-400 my-5">
+                <div class="mx-6 align-center position-relative" style="top:25%;">
+                    <p class="text-transition text-clean" style="text-align: center;">Use a <b class="text-2"> imaginação</b> e as muitas <b class="text-2">ferramentas a seu dispor</b> para criar <b class="text-2">campanhas incriveis</b>.</p>
+                </div>
+                <div class="align-center position-relative" style="top:25%;">
+                  <a href="cadastro.php">
+                    <button type="submit" class="btn btn-primary btn-white align-center w-50" style="width: 75%;">Cadastre-se</button>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-6 my-5">
+                <img src="img/i_img_4.svg" width="100%" class="align-image" alt="...">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="container">
+          <div class="row my-5">
+            <div class="col-md-5 fw-400 my-5">
+              <div class="card bg-card-lend card-lend text-clean p-2 mx-3 position-relative align-center" style="width: 18rem;">
+                <div class="card-body  position-absolute top-10">
+                  <h5 class="card-title fs-4 text-center">Crie uma conta gratuita</h5>
+                  <i class="bi-people card-text text-2 align-image fs-1 my-3"></i>
+                  <i class="inner-icon"></i>
+                  <p class="card-text text-clean fs-5 text-center">e convide os seus amigos para se divertirem juntos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 fw-400 my-5">
+              <div class="mx-6 align-center position-relative" style="top:25%;">
+                <p class="text-transition" style="text-align: center;">ou</p>
+              </div>
+            </div>
+            <div class="col-md-5 my-5">
+              <div class="card bg-card-lend card-lend text-clean p-0 mx-3 position-relative align-center" style="width: 18rem;">
+                <div class="card-body p-4 position-absolute top-5">
+                  <h5 class="card-title fs-4 text-center">Assine o plano pago</h5>
+                  <i class="bi-coin card-text text-2 align-image fs-1 my-3"></i>
+                  <i class="inner-icon"></i>
+                  <p class="card-text text-clean fs-5 text-center">e ganhe previlégios que deixarão o jogo mais divertido.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-image">
+        <div class="container-fluid bg-glass">
+            <div class="row">
+                <div class="col-md-4 my-5">
+
+                </div>
+                <div class="col-md-4 my-5 position-relative">
+                    <p class="card-text text-clean fw-600 login text-center dice-border position-relative" style="z-index: 2; top: 40%;">Jogue com Dicenders®</p>
+                    <img src="img/logofundo.png" class="align-image mb-6" style="opacity: 70%; filter: blur(2px); backdrop-filter: blur(1.5px); width: 50%;" alt="...">
+                    <div class="ms-0">
+                      <a href="cadastro.php">
+                        <button type="submit" class="btn btn-primary btn-white w-50 align-center">Cadastre-se</button>
+                      </a>
+                    </div>
+                </div>
+                <div class="col-md-4 my-5">
+
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <footer></footer>
+</body>
+<script>
+function lerfirsttry(){
+  if(!localStorage.getItem("firstTry")){
+    localStorage.setItem('firstTry', 0);
+  }
+}
+
+lerfirsttry();
+
+if(localStorage.getItem("firstTry")== 0){
+    document.getElementById("buttonModal").click();
+}
+
+function desativamodal(){
+  localStorage.setItem('firstTry', 1);
+}
+
+function ativacontraste(){
+  localStorage.setItem('altocontrasteativo', 'altocontrast');
+  document.getElementById("html").setAttribute('colormodel', localStorage.getItem("altocontrasteativo"));
+}
+</script>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="html" colormodel=>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap-reboot.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/bootstrap-utilities.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <!--Icones-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            
+        <!--Fontes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+            
+        <!--Favicon-->
+        <link rel="shortcut icon" href="img/001padrao.png" type="image/x-icon">
+        <script src="js/code.js" defer></script>
+        <script src="js/cfigcontent.js" defer></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <title>Configurações</title>
+    </head>
+<body class="bg-5 inter-font" id="body" theme-dicender=>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 border-end border-3 bc-2" style="min-height: 100vh;">
+                <a class="icon-link icon-link-hover my-5 align-image" href="menu.php">
+                    <i class="bi bi-arrow-left fs-3" style="margin-bottom: 28px;" aria-hidden="true"></i>
+                    <p class="fs-4 fw-600">Voltar ao menu principal</p>
+                </a>
+                <hr class="border-top border-3 bc-2 opacity-100" style="width: 23.5vw;"></hr>
+                <ul class="config-list" id="listBtnConfig">
+                    <li class="config-item" id="suaConta" data-bs-toggle="collapse" data-bs-target="#suaContaList" role="button" aria-expanded="false" aria-controls="suaContaList">
+                        <p class="m-0 fw-500 list-inline-item">Sua conta</p>
+                        <i class="bi-chevron-down float-end me-4"></i>
+                    </li>
+                        <ul class="config-list-internal collapse" id="suaContaList" style="z-index: 999;">
+                            <li class="config-item-internal" id="infoConta">
+                                <p class="m-0 fw-500 list-inline-item">Informações da conta</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                            <li class="config-item-internal" id="atividades">
+                                <p class="m-0 fw-500 list-inline-item">Sua atividade</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                        </ul>
+                    <li class="config-item" id="segPriv" data-bs-toggle="collapse" data-bs-target="#segPrivList" role="button" aria-expanded="false" aria-controls="SegPrivList">
+                        <p class="m-0 fw-500 list-inline-item">Segurança e privacidade</p>
+                        <i class="bi-chevron-down float-end me-4"></i>
+                    </li>
+                        <ul class="config-list-internal collapse" id="segPrivList" style="z-index: 999;">
+                            <li class="config-item-internal" id="sessoes">
+                                <p class="m-0 fw-500 list-inline-item">Sessões</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                            <li class="config-item-internal" id="bloqueados">
+                                <p class="m-0 fw-500 list-inline-item">Bloqueados e silenciados</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                            <li class="config-item-internal" id="exibicao">
+                                <p class="m-0 fw-500 list-inline-item">Tempo de exibição</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                            <li class="config-item-internal" id="contSensivel">
+                                <p class="m-0 fw-500 list-inline-item">Conteudo sensível</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                        </ul>
+                    <li class="config-item" id="personaliza" data-bs-toggle="collapse" data-bs-target="#personaList" role="button" aria-expanded="false" aria-controls="personaList">
+                        <p class="m-0 fw-500 list-inline-item">Personalização</p>
+                        <i class="bi-chevron-down float-end me-4"></i>
+                    </li>
+                        <ul class="config-list-internal collapse" id="personaList" style="z-index: 999;">
+                            <li class="config-item-internal" id="temas">
+                                <p class="m-0 fw-500 list-inline-item">Temas</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                            <li class="config-item-internal" id="acessibilidade">
+                                <p class="m-0 fw-500 list-inline-item">Acessibilidade</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                        </ul>
+                    <li class="config-item" id="loja">
+                        <p class="m-0 fw-500 list-inline-item">Loja de itens</p>
+                        <i class="bi-chevron-down float-end me-4"></i>
+                    </li>
+                    <li class="config-item" id="outros" data-bs-toggle="collapse" data-bs-target="#outrosList" role="button" aria-expanded="false" aria-controls="outrosList">
+                        <p class="m-0 fw-500 list-inline-item">Outros</p>
+                        <i class="bi-chevron-down float-end me-4"></i>
+                    </li>
+                        <ul class="config-list-internal collapse" id="outrosList" style="z-index: 999;">
+                            <li class="config-item-internal" id="termos">
+                                <p class="m-0 fw-500 list-inline-item">Termos</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                            <li class="config-item-internal" id="politPriv">
+                                <p class="m-0 fw-500 list-inline-item">Política de privacidade</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                            <li class="config-item-internal" id="sobre">
+                                <p class="m-0 fw-500 list-inline-item">Sobre</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                            <li class="config-item-internal" id="contato">
+                                <p class="m-0 fw-500 list-inline-item">Contato</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                            <li class="config-item-internal" id="centralAjuda">
+                                <p class="m-0 fw-500 list-inline-item">Central de ajuda</p>
+                                <i class="bi-chevron-right float-end me-4"></i>
+                            </li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="col-md-7 bg-config">
+                <object id="conteudoConfig" data="" type="" style="min-height: 100vh; min-width: 100%;"></object>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+<script>
+    function desativaaltocontraste(){
+        if(localStorage.getItem("altocontrasteativo") == "altocontrast"){
+            localStorage.setItem('altocontrasteativo', 'default');
+            document.getElementById("paragrafocontraste").innerHTML = 'Atualmente, o alto-contraste está desativado';
+        } else{
+            localStorage.setItem('altocontrasteativo', 'altocontrast');
+            document.getElementById("paragrafocontraste").innerHTML = 'Atualmente, o alto-contraste está ativo';
+        }
+    }
+</script>
+</html>
